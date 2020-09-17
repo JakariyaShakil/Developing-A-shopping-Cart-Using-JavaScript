@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Task for this Assignment : Developing A shopping Cart Using JavaScript
+You will develop an ecommerce shopping cart where users can add or remove items from a list of products. by Jakariya Shakil -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            margin-bottom: 20px;   
+        }
+        .detailes{
+            display: flex;
+            flex-direction: column;
+        }
+        #goback{
+            position: fixed;
+            top: 20;
+            right: 20;
+        }
+    </style>
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+    <button id="goback" onclick="goBack();">Continue Shopping</button>
+
+    <div class="text-center">
+        <h1> <u>Cart</u> </h1>
+    </div>
+    
+    <div class="container">    
+        <div class="productlist">
+
+
+        </div>
+    </div>
+
+    <script src="./cart.js"></script>
+</body>
+</html>

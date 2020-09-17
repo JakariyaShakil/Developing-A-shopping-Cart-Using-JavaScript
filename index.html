@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Task for this Assignment : Developing A shopping Cart Using JavaScript
+You will develop an ecommerce shopping cart where users can add or remove items from a list of products. by Jakariya Shakil -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cart-div{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+    <title>Developing A shopping Cart Using JavaScript</title>
+</head>
+<body>
+    <div class="cart-div">
+        <span>Cart:</span> <span id="cart-count" data-product="0" >0</span>
+        <a href="shoppingcart.html">Show Cart</a>
+    </div>
+    <div class="text-center mb-5">
+        <h1>Shopping Cart</h1> 
+    </div>
+   <div class="products text-center">
+        <div class="product">
+            <span>IPhone 6s</span>
+            <span>Price: </span> <span data-price="39999">39,999</span> 
+            <button onclick="addToCart(this);">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Oppo F17 Pro</span>
+            <span>Price: </span> <span data-price="27990">27,990</span> 
+            <button onclick="addToCart(this);">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Mackbook Pro</span>
+            <span>Price: </span> <span data-price="109999">109,999</span> 
+            <button onclick="addToCart(this);">Add to Cart</button>
+        </div>
+   </div>
+
+   <script src="./index.js"></script>
+
+</body>
+</html>
